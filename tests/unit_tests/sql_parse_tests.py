@@ -30,6 +30,13 @@ from superset.exceptions import (
     QueryClauseValidationException,
     SupersetSecurityException,
 )
+from superset.sql.parse import (
+    KustoKQLStatement,
+    split_kql,
+    SQLScript,
+    SQLStatement,
+    Table,
+)
 from superset.sql_parse import (
     add_table_name,
     check_sql_functions_exist,
@@ -39,14 +46,9 @@ from superset.sql_parse import (
     has_table_query,
     insert_rls_as_subquery,
     insert_rls_in_predicate,
-    KustoKQLStatement,
     ParsedQuery,
     sanitize_clause,
-    split_kql,
-    SQLScript,
-    SQLStatement,
     strip_comments_from_sql,
-    Table,
 )
 
 
